@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dashboard - Employee Management</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #fff7e6; /* Light orange background */
+}
+
+.dashboard-container {
+	text-align: center;
+	border: 2px solid #ffa500; /* Orange border */
+	padding: 30px 50px;
+	border-radius: 10px;
+	background-color: #fff; /* White card background */
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	width: 400px;
+}
+
+h3 {
+	color: #ff6600; /* Deep orange */
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+button {
+	background-color: #ff6600; /* Deep orange buttons */
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px 0;
+	width: 100%;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+	background-color: #cc5200; /* Darker orange on hover */
+	transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:focus {
+	outline: none;
+	box-shadow: 0 0 5px 2px rgba(255, 102, 0, 0.6);
+	/* Highlight on focus */
+}
+
+footer {
+	margin-top: 20px;
+	font-size: 14px;
+	color: #666;
+}
+</style>
+</head>
+<body>
+	<div class="dashboard-container">
+		<h3>Welcome to Employee Management Dashboard</h3>
+		<button onClick="window.location.href='addEmployee.html'">Add
+			Employee</button>
+		<button onClick="window.location.href='allEmployees'">All
+			Employees</button>
+		<button onClick="window.location.href='login.html'">Logout</button>
+		<footer> &copy; 2024 Employee Management System. All Rights
+			Reserved. </footer>
+	</div>
+</body>
+</html>

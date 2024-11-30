@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login - Employee Management</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff7e6; /* Light orange background */
+    }
+
+    .form-container {
+        text-align: center;
+        border: 2px solid #ffa500; /* Orange border */
+        padding: 20px 40px;
+        border-radius: 10px;
+        background-color: #fff; /* White form background */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    h1 {
+        color: #ff6600; /* Deep orange */
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    input:focus {
+        border-color: #ffa500; /* Orange border on focus */
+        outline: none;
+        box-shadow: 0 0 5px 2px rgba(255, 165, 0, 0.3);
+    }
+
+    button {
+        background-color: #ff6600; /* Deep orange button */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #cc5200; /* Darker orange on hover */
+    }
+
+    button:focus {
+        outline: none;
+        box-shadow: 0 0 5px 2px rgba(255, 102, 0, 0.6); /* Highlight on focus */
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #666;
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Login</h1>
+        <form action="login" method="get">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <div class="footer">
+            Don't have an account? <a href="SignUp.html" style="color: #ff6600; text-decoration: none;">Signup</a>
+        </div>
+    </div>
+</body>
+</html>
